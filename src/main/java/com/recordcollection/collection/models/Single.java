@@ -9,6 +9,7 @@ public class Single {
     private @Id @GeneratedValue Long id;
     private String name;
     private String releaseYear;
+    private String[] tracks;
 
     public Single(String name, String releaseYear) {
         this.name = name;
@@ -41,5 +42,13 @@ public class Single {
 
     public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
+    }
+
+    public String[] getTracks() {
+        return tracks;
+    }
+
+    public void setTracks(String[] tracks) {
+        this.tracks = tracks;
     }
 }
