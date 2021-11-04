@@ -11,9 +11,10 @@ public class Single {
     private String releaseYear;
     private String[] tracks;
 
-    public Single(String name, String releaseYear) {
+    public Single(String name, String releaseYear, String[] tracks) {
         this.name = name;
         this.releaseYear = releaseYear;
+        this.tracks = tracks;
     }
 
     public Single() {
