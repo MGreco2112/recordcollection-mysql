@@ -30,4 +30,6 @@ public class SingleController {
         return repository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
+    //TODO add the Modify and Delete routes from App Project
+
 }
